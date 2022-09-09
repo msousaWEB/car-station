@@ -1,7 +1,8 @@
 import React from "react";
 import { createTheme, ThemeProvider } from '@material-ui/core/styles';
-import {Button, TextField} from '@material-ui/core';
 import { blue } from "@material-ui/core/colors";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { FaUser} from 'react-icons/fa'
 
 const theme = createTheme({
   palette: {
@@ -23,17 +24,8 @@ const theme = createTheme({
 
 const App = () => (
   <ThemeProvider theme={theme}>
-    <h1>Aplicação React</h1>
-
-    <Button variant="contained">Default</Button>
-      <Button variant="contained" color="primary">
-        Primary
-      </Button>
-      <Button variant="contained" color="secondary">
-        Secondary
-      </Button>
-
-      <TextField/>
+    <h1 className="text-danger">Aplicação React</h1>
+    <FaUser style={{fontSize: '40px', color: 'red'}}/>
   </ThemeProvider>
 )
 
