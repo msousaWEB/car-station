@@ -2,7 +2,7 @@ import React from "react";
 import { createTheme, ThemeProvider } from '@material-ui/core/styles';
 import { blue } from "@material-ui/core/colors";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { FaUser} from 'react-icons/fa'
+import Routes from "./Routes";
 
 const theme = createTheme({
   palette: {
@@ -24,8 +24,7 @@ const theme = createTheme({
 
 const App = () => (
   <ThemeProvider theme={theme}>
-    <h1 className="text-danger">Aplicação React</h1>
-    <FaUser style={{fontSize: '40px', color: 'red'}}/>
+    <Routes />
   </ThemeProvider>
 )
 
